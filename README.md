@@ -42,4 +42,4 @@ React、Create React App
 
 ### 项目展示
 
-<img src/>
+<img src="https://github.com/Chzfly/projectBT/blob/master/capture/show.gif"/>
