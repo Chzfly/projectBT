@@ -20,6 +20,7 @@ export default class Detail extends Component {
 		artist: [],
 		showImage: false
 	}
+
 	//定义请求数据函数
 	getData = async () => {
 		const data = await request('/artist');
@@ -29,6 +30,8 @@ export default class Detail extends Component {
 	}
 	componentDidMount(){
 		this.getData();
+		//页面置顶
+		window.scrollTo(0, 0);
 	}
 
 	toggleShowImage = () => {
