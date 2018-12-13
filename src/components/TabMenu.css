@@ -1,0 +1,35 @@
+.tabMenu {
+  display: flex;
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #e4e2e2; }
+  .tabMenu a {
+    text-decoration: none; }
+  .tabMenu__btn {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .tabMenu__icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-color: #ccc; }
+    .tabMenu__icon--movie {
+      background: #fff url("../icons/movie.png") 50%/contain no-repeat; }
+    .tabMenu__icon--user {
+      background: #fff url("../icons/user.png") 50%/contain no-repeat; }
+  .tabMenu__btn--active .tabMenu__text {
+    color: #ff4c64; }
+  .tabMenu__btn--active .tabMenu__icon--movie {
+    background: #fff url("../icons/movie-solid.png") 50%/contain no-repeat; }
+  .tabMenu__btn--active .tabMenu__icon--user {
+    background: #fff url("../icons/user-solid.png") 50%/contain no-repeat; }
+  .tabMenu__text {
+    color: #666;
+    font-size: 10px;
+    margin-top: 4px; }

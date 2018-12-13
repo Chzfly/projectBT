@@ -1,0 +1,38 @@
+@import '../../util';
+
+.detail{
+
+
+	&__top{
+		background-color: #d4b267;
+		padding: 0 20px;
+	}
+
+	&__content{
+		padding: 0 20px 55px;
+	}
+
+	&__module{
+		&:nth-child(n + 2){
+			border-top: 1px solid $border;
+			margin-top: 17px;
+		}
+	}
+	.detail__moduleTitle{
+		font-size: 18px;
+		line-height: 48px;
+		margin: 0;
+	}
+	&__buyBtn{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 55px;
+		background-color: $active;
+		text-decoration: none;
+		line-height: 55px;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+	}
+}

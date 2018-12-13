@@ -1,0 +1,9 @@
+.star{
+	display: inline-block;
+	margin-left: 10px;
+	background: url('../icons/star-o.svg') 0 50% / contain repeat-x;
+
+	&__cover{
+		background: url('../icons/star.svg') 0 50% / contain repeat-x;
+	}
+}

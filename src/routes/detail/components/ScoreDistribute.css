@@ -1,0 +1,38 @@
+.scoreDistribute {
+  display: flex; }
+  .scoreDistribute__left {
+    margin-left: 15px; }
+    .scoreDistribute__left--score {
+      font-size: 34px;
+      line-height: 40px;
+      color: #000; }
+    .scoreDistribute__left--total {
+      font-size: 12px;
+      line-height: 12px;
+      color: #777; }
+      .scoreDistribute__left--total i {
+        display: inline-block;
+        line-height: 12px;
+        border-left: 4px solid #777;
+        border-top: 3px solid #fff;
+        border-bottom: 3px solid #fff; }
+  .scoreDistribute__right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    flex: 1;
+    margin-top: 10px; }
+  .scoreDistribute__star {
+    height: 8px;
+    display: flex;
+    align-items: center; }
+  .scoreDistribute__range {
+    width: 100%;
+    height: 3px;
+    vertical-align: 12%;
+    background-color: #ededed;
+    margin-left: 8px;
+    flex: 1; }
+    .scoreDistribute__range--cover {
+      height: 100%;
+      background-color: #fc943c; }

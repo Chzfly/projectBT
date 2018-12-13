@@ -1,0 +1,19 @@
+.collapsibleText{
+	line-height: 28px;
+	font-size: 14px;
+	position: relative;
+	margin-top: 15px;
+
+	&__collapsed{
+		overflow: hidden;
+	}
+
+	&__label{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		color: #6a9ada;
+		padding: 0 10px 0 20px;
+		background: linear-gradient(90deg, hsla(0, 0%, 100, 0%), #fff, #fff, #fff, #fff);
+	}
+}

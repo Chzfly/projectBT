@@ -1,0 +1,66 @@
+@import '../../../util';
+
+.commentList{
+	.commentItem{
+		&:nth-child(n + 2){
+			margin-top: 15px;
+		}
+
+		&__user{
+			display: flex;
+			&--avatar{
+				width: 50px;
+				height: 50px;
+				background-color: #ccc;
+				background-size: cover;
+				border-radius: 50%;
+			}
+			&--right{
+				flex: 1;
+				margin-left: 6px;
+			}
+			&--name{
+				font-size: 16px;
+				line-height: 26px;
+				font-weight: bold;
+			}
+			&--score{
+				margin-left: -10px;
+			}
+			&--value{
+				color: #f2a95d;
+				font-weight: bold;
+				font-size: 16px;
+				margin-left: 6px;
+			}
+		}
+
+		&__content{
+			margin-top: -10px;
+		}
+
+		&__bottom{
+			display: flex;
+			justify-content: space-between;
+			color: $gray;
+			font-size: 12px;
+			margin-top: 6px;
+
+			&--zan{
+				i{
+					display: inline-block;
+					width: 14px;
+					height: 14px;
+					margin-right: 5px;
+					background: url('../../../icons/zan-o.svg') 50% / contain no-repeat;
+				}
+			}
+
+			&--zan.active{
+				i{
+					background: url('../../../icons/zan-solid.svg') 50% / contain no-repeat;
+				}
+			}
+		}
+	}
+}

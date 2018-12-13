@@ -1,0 +1,58 @@
+@import '../util.scss';
+
+.tabMenu{
+	display: flex;
+	height: 48px;
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid $border;
+
+	a{
+		text-decoration: none;
+	}
+
+	&__btn{
+		flex: 1;
+		flex-direction: column;
+		@include flex-center;
+	}
+
+	&__icon{
+		width: 22px;
+		height: 22px;
+		display: block;
+		background-color: #ccc;
+
+		&--movie{
+			background: #fff url('../icons/movie.png') 50% / contain no-repeat;
+		}
+
+		&--user{
+			background: #fff url('../icons/user.png') 50% / contain no-repeat;
+		}
+	}
+
+	&__btn--active{
+		.tabMenu__text{
+			color: #ff4c64;
+		}
+
+		.tabMenu__icon{
+			&--movie{
+				background: #fff url('../icons/movie-solid.png') 50% / contain no-repeat;
+			}
+
+			&--user{
+				background: #fff url('../icons/user-solid.png') 50% / contain no-repeat;
+			}
+		}
+	}
+
+	&__text{
+		color: #666;
+		font-size: 10px;
+		margin-top: 4px;
+	}
+}

@@ -1,0 +1,60 @@
+@import '../../util';
+
+.user{
+	background-color: #fff;
+	&__top{
+		background-color: #313440;
+		color: #fff;
+		padding: 0 20px 20px;
+	}
+
+	&__content{
+		padding: 0 15px;
+	}
+
+	&__info{
+		display: flex;
+	}
+
+	&__avatar{
+		width: 70px;
+		height: 70px;
+		background-image: url('/source/avatar.jpg');
+		background-size: cover;
+		border-radius: 50%;
+		margin-right: 20px;
+		margin-top: 5px;
+	}
+
+	&__detail{
+		flex: 1;
+		overflow: hidden;
+	}
+
+	&__name{
+		font-size: 20px;
+		line-height: 28px;
+
+		@include line-ellipsis;
+	}
+
+	&__fellow,
+	&__fans{
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	&__fans{
+		margin-left: 9px;
+	}
+
+	&__level{
+		background-color: rgb(115, 119, 143);
+		width: 50px;
+		line-height: 16px;
+		font-size: 12px;
+		border-radius: 8px;
+		text-align: center;
+		margin-top: 10px;
+		padding: 0 8px;
+	}
+}

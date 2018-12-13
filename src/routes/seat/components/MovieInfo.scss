@@ -1,0 +1,17 @@
+@import '../../../util';
+
+.seatMovieInfo{
+	padding: 20px 20px;
+	border-top: 1px solid $border;
+	border-bottom: 1px solid $border;
+	&__name{
+		color: $black;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	&__time{
+		font-size: 14px;
+		margin-top: 10px;
+		color: $gray;
+	}
+}

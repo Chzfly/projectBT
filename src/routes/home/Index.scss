@@ -1,0 +1,32 @@
+.home{
+	&__slide{
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 40%; //内边距百分比时使用的父盒子的宽度为基准，可以利用这点设置固定的宽高比
+	}
+
+
+	&__slideWrap{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	&__content{
+		list-style: none;
+		padding: 0 20px 49px;
+		margin: 0;
+
+		li{
+			list-style: none;
+
+			&:nth-child(n + 2){
+				border-top: 1px solid #e4e2e2;
+			}
+		}
+
+	}
+}
