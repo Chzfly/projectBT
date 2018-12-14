@@ -12,8 +12,8 @@ React、Create React App
 > * 评论区展示
 > * 座位选择
 ### 项目总结
-> * create-react-app起手，简单高效
-> * 样式：用了scss，默认样式引用了normalize.css，将常用单个样式在_util.scss中进行了封装，常用组件样式也在common.scss中进行了分离
+> * 使用构建工具create-react-app构建项目
+> * 样式：使用css预处理器sass编写样式，默认样式引用了normalize.css，将常用单个样式在_util.scss中进行了封装，常用组件样式也在common.scss中进行了分离，利用flex进行自适应布局
 > * 通用组件：在components中进行封装
 > * 主要部分：在routes文件夹下进行编写
 > * 路由：使用react-router-dom中的BrowserRouter和Route
